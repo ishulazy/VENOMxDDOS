@@ -49,7 +49,7 @@ jobs:
       run: |
         while true; do
           start_time=$(date +%s)
-          timeout 21000s ./venom.py  # Run for 5 hours 50 minutes
+          timeout 21000s ./run_m_py.sh  # Run for 5 hours 50 minutes
           end_time=$(date +%s)
           run_time=$((end_time - start_time))
           
